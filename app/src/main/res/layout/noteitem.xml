@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp">
+
+    <ImageView
+        android:id="@+id/img_head"
+        android:layout_width="133dp"
+        android:layout_height="120dp"
+        android:src="@drawable/head" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/img_head"
+        android:text="标题" />
+
+
+    <TextView
+        android:id="@+id/tv_creatime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp"
+        android:text="创建时间" />
+
+    <TextView
+        android:id="@+id/tv_secondtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:text="副标题"
+        android:layout_alignBottom="@+id/img_head"
+        android:layout_alignRight="@+id/tv_title"
+        android:layout_alignEnd="@+id/tv_title"
+        android:layout_marginBottom="35dp" />
+
+    <TextView
+        android:id="@+id/tv_changetime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="修改时间"
+        android:layout_alignBaseline="@+id/tv_secondtitle"
+        android:layout_alignBottom="@+id/tv_secondtitle"
+        android:layout_alignLeft="@+id/tv_creatime"
+        android:layout_alignStart="@+id/tv_creatime" />
+
+</RelativeLayout>
